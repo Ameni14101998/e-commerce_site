@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-1 text-center">Welcome to Ameni Store</h1>
+<br />
+<!--If properly implemented, the toys, food,
+and products buttons would lead to the catalog page
+with only products in that category displayed-->
+<div class="card">
+    <img src="~/images/beauty.jpg" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Beauty</h5>
+        <p class="card-text">Buy high-quality cosmetics that accentuate your natural beauty and leave you feeling confident</p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Beauty</a>
+    </div>
+</div>
+<div class="card">
+    <img src="~/images/jewerly.png" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Jewerly</h5>
+        <p class="card-text">Buy a touch of elegance and make a statement with our exquisite jewelry collection</p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Jewerly</a>
+    </div>
+</div>
+<div class="card">
+    <img src="~/images/sport.jpg" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Sports</h5>
+        <p class="card-text">Buy top-notch sports equipment and apparel to enhance your performance and reach new heights in your athletic endeavors</p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Sports</a>
+    </div>
+</div>
+<div class="card">
+    <img src="~/images/promotionalproducts.jpg" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Products</h5>
+        <p class="card-text">There are plenty of other products</p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Other Products</a>
+    </div>
+</div>
